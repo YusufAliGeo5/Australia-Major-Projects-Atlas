@@ -2,10 +2,6 @@
 
 **Mapping major projects, infrastructure, jobs and regional opportunity across Australia.**
 
-# Australia Major Projects Atlas
-
-**Mapping major projects, infrastructure, jobs and regional opportunity across Australia.**
-
 👉 **[Open the Major Projects Explorer](https://your-username.github.io/australia-major-projects-atlas/)**
 
 ---
