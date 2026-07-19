@@ -1,184 +1,123 @@
 # Australia Major Projects Atlas
 
-**Mapping major projects, infrastructure, investment, employment and regional opportunity across Australia.**
+**Mapping major projects, infrastructure, jobs and regional opportunity across Australia.**
 
-The **Australia Major Projects Atlas** is an independent GIS and data visualisation project exploring the geography of major investment projects across Australia.
+The **Australia Major Projects Atlas** is an independent GIS and data visualisation project exploring where major investment projects are located, how they connect to surrounding regions, and what they may mean for communities, infrastructure and employment.
 
-The repository is designed as the home for a growing series of related products: a national project explorer, project-specific map briefs, interactive web maps, ArcGIS StoryMaps, dashboards, data and reproducible methodology.
-
-The current working product is the **Major Projects Explorer**.
+The atlas is designed as a growing collection of national and project-specific maps. It brings together a searchable national explorer, detailed map briefs, interactive web maps, ArcGIS StoryMaps and other visual products.
 
 ![Desktop preview of the Major Projects Explorer](docs/preview.png)
 
-## Atlas components
+## What the atlas includes
 
-| Component | Purpose | Status |
-|---|---|---|
-| **Major Projects Explorer** | Search, filter and compare major projects across Australia | Working MVP |
-| **Major Project Map Briefs** | Explain individual projects, infrastructure and regional opportunity | Pilot stage |
-| **Interactive Web Maps** | Provide detailed project and regional geography | Planned |
-| **Major Project Stories** | Present narrative project profiles through ArcGIS StoryMaps | Planned |
-| **Australia Major Projects Dashboard** | Summarise national project patterns and indicators | Under consideration |
-| **Data and Methodology** | Document sources, assumptions, processing and limitations | In development |
+### Major Projects Explorer
 
-## Major Projects Explorer
+The **Major Projects Explorer** is the main national map. It allows users to:
 
-The **Major Projects Explorer** is the national entry point to the atlas. It currently allows users to:
+- search for major projects across Australia;
+- filter projects by location and project type;
+- compare reported investment and employment figures;
+- view project descriptions and key information; and
+- discover more detailed project maps as they are added.
 
-- search projects by name, proponent, description or location;
-- filter projects by state, territory and category;
-- compare reported capital expenditure and employment figures;
-- view approximate regional project locations; and
-- browse project descriptions and key metrics.
+The explorer is intended as a simple starting point for understanding the national distribution of major projects.
 
-The explorer is intended as a discovery and comparison tool. As detailed project products are added, project cards will link to available map briefs, web maps, StoryMaps and supporting methodology.
+### Project Map Briefs
 
-## Major Project Map Briefs
+Selected projects will receive their own detailed map briefs.
 
-Selected projects will receive dedicated cartographic briefs. These will generally use a two-part structure:
+These briefs will usually focus on two questions:
 
-1. **Project geography and infrastructure** — the project location, footprint, supporting infrastructure, transport or transmission connections, nearby communities and relevant environmental context.
-2. **Workforce and regional opportunity** — construction and operating employment, workforce readiness, relevant industries, training capacity, supply chains and regional economic opportunity.
+1. **What is being built, and where?**  
+   This may include the project site, transport links, transmission lines, ports, nearby communities and other supporting infrastructure.
 
-The analytical content will vary by project type. Offshore wind may require greater emphasis on ports, marine services and transmission, while mining and processing projects may focus on freight, energy, water, workforce access and industrial capability.
+2. **What could the project mean for the region?**  
+   This may include construction jobs, long-term employment, workforce readiness, local industries, training opportunities and possible supply-chain benefits.
 
-The **Star of the South** offshore wind concept is the first pilot for this format.
+The content will vary depending on the project. For example, an offshore wind project may focus on ports, marine services and electricity connections, while a mining project may focus on freight, processing, energy, water and workforce access.
 
-## Run locally
+The **Star of the South** offshore wind project is the first pilot for this format.
 
-Python 3.10 or newer is sufficient. The explorer does not require npm packages, a database, a map API or third-party runtime JavaScript.
+### Interactive ArcGIS Products
 
-```bash
-python scripts/build_data.py
-python -m http.server 8000 --directory site
-```
+The atlas may also include:
 
-Open:
+- ArcGIS Online web maps;
+- ArcGIS StoryMaps;
+- dashboards;
+- project-specific interactive applications; and
+- downloadable static maps.
 
-```text
-http://localhost:8000
-```
+These products will provide additional detail and allow users to explore project geography more closely.
 
-With `make` installed:
+## Why this project exists
 
-```bash
-make serve
-```
+Major projects are often described through large investment and employment figures, but those numbers do not always show how a project connects to the places around it.
 
-## Validate the project
+The atlas aims to make that relationship easier to understand by combining:
 
-Run the full validation suite before committing changes:
+- **project geography** — where projects and supporting infrastructure are located;
+- **community geography** — which towns, regions and workforces are nearby; and
+- **economic geography** — where jobs, services and supply-chain opportunities may emerge.
 
-```bash
-make check
-```
+The goal is not only to show where a project is located, but also how it may fit into the wider regional landscape.
 
-Validation checks include:
+## Current status
 
-- required raw and curated data fields;
-- project IDs, dates, jurisdictions and coordinates;
-- capital expenditure and employment parsing;
-- one-to-one matching between raw projects and enrichment records;
-- generated application data;
-- Python unit tests; and
-- JavaScript syntax.
+The **Major Projects Explorer** is available as a working first version.
 
-## Update the national project data
+The next stages of the atlas will focus on:
 
-1. Replace `data/raw/Australia Projects.csv` with the reviewed source snapshot while preserving the required columns.
-2. Reconcile each project ID with `data/curated/project_enrichment.csv`.
-3. Review project categories, regional labels, coordinates and marker offsets.
-4. Run `python scripts/build_data.py`.
-5. Run `make check`.
-6. Review the explorer locally before committing the source data, enrichment changes and regenerated JSON together.
+- improving the national explorer;
+- creating a consistent visual style for the series;
+- developing project-specific map briefs;
+- publishing selected interactive ArcGIS maps;
+- building a flagship StoryMap; and
+- expanding the atlas across different project types and regions.
 
-The build intentionally fails when the raw project register and curated enrichment layer do not match.
+## Planned project themes
 
-## Current repository structure
+The atlas may include projects from sectors such as:
 
-```text
-.
-├── data/
-│   ├── curated/project_enrichment.csv
-│   ├── raw/Australia Projects.csv
-│   └── source.json
-├── docs/
-│   └── preview.png
-├── scripts/
-│   └── build_data.py
-├── site/
-│   ├── assets/
-│   ├── data/
-│   └── index.html
-├── tests/
-│   └── test_build_data.py
-├── DATA_AUDIT.md
-├── ROADMAP.md
-└── Makefile
-```
+- renewable energy;
+- offshore wind;
+- hydrogen;
+- critical minerals;
+- mining and mineral processing;
+- advanced manufacturing;
+- transport and logistics;
+- energy infrastructure; and
+- digital infrastructure.
 
-As the atlas grows, project-specific material can be organised under a structure such as:
+Projects will be selected based on their scale, regional importance, available public information and mapping potential.
 
-```text
-projects/
-├── star-of-the-south/
-│   ├── data/
-│   ├── maps/
-│   ├── methodology/
-│   └── arcgis/
-└── additional-projects/
+## Data and map notes
 
-templates/
-├── project-brief/
-├── project-readme-template.md
-├── source-register-template.csv
-└── methodology-template.md
+The atlas uses publicly available information from government, project proponents and other open sources.
 
-shared-data/
-├── boundaries/
-├── transport/
-├── ports/
-├── labour-market/
-└── metadata/
-```
+Investment and employment figures are generally based on published project estimates. They may change as projects develop and should not be treated as guaranteed outcomes.
 
-Large geodatabases, proprietary material and unnecessary source files should not be committed directly. Where practical, the repository should store open processed formats, source links, download instructions, metadata and reproducible scripts.
+Some locations in the national explorer are approximate regional reference points rather than exact project boundaries. Detailed project maps will clearly distinguish between confirmed locations, proposed routes and approximate areas.
 
-## Data and geographic limitations
+Official government, planning and project sources should be consulted for the most current legal, technical or investment information.
 
-The current explorer is based on the supplied Australian Government major project register. Capital expenditure and employment values are project- or proponent-reported figures contained in the source descriptions. They should not be treated as independently verified outcomes unless explicitly stated.
+## Project links
 
-The source register does not provide precise coordinates or project boundary geometry. Locations in `data/curated/project_enrichment.csv` are approximate regional reference points derived from project descriptions, named localities and the published source map.
+As the atlas grows, this repository will include links to:
 
-They must not be represented as legal project boundaries, approved infrastructure alignments, cadastral locations or engineering coordinates.
+- the national Major Projects Explorer;
+- project-specific map briefs;
+- interactive ArcGIS maps;
+- StoryMaps;
+- dashboards; and
+- supporting sources and notes.
 
-Detailed project maps should clearly distinguish between verified geometry, proposed corridors, approximate locations, conceptual infrastructure and analytical reference points.
+## Disclaimer
 
-See [DATA_AUDIT.md](DATA_AUDIT.md) for the current dataset review and [ROADMAP.md](ROADMAP.md) for delivery priorities.
+The **Australia Major Projects Atlas** is an independent GIS and data visualisation project.
 
-## Roadmap
+It is not an official Australian Government product and is not affiliated with project proponents unless explicitly stated.
 
-The next priorities are to:
+## Author
 
-1. complete the transition from a single map project to the Australia Major Projects Atlas;
-2. refine the national explorer and project metadata model;
-3. create reusable project brief, source and methodology templates;
-4. develop several pilot briefs across different project sectors;
-5. publish selected ArcGIS web maps and a flagship StoryMap; and
-6. expand the series based on data availability, geographic diversity and regional significance.
-
-## Deploy with GitHub Pages
-
-The included GitHub Pages workflow builds the project data, runs validation and deploys the contents of `site/` after a push to `main`.
-
-Set the repository publishing source to:
-
-**Settings → Pages → Build and deployment → Source → GitHub Actions**
-
-## Attribution, licensing and disclaimer
-
-Source attribution for the national project register is recorded in the application and in `data/source.json`. The simplified national outline is derived from Natural Earth country geometry, which is public domain.
-
-A repository licence should be selected before public reuse or outside contribution. Individual datasets, basemaps, icons and ArcGIS items may have separate attribution and licensing requirements.
-
-The Australia Major Projects Atlas is not an official Australian Government product and is not affiliated with project proponents unless explicitly stated. Project status, costs, employment estimates and proposed infrastructure may change. Official government, planning and proponent sources should be consulted for current legal, technical or investment information.
+Created by **Yusuf Ali** as an independent GIS, cartography and regional economic analysis project.
