@@ -2,6 +2,14 @@
 
 **Mapping major projects, infrastructure, jobs and regional opportunity across Australia.**
 
+# Australia Major Projects Atlas
+
+**Mapping major projects, infrastructure, jobs and regional opportunity across Australia.**
+
+👉 **[Open the Major Projects Explorer](https://your-username.github.io/australia-major-projects-atlas/)**
+
+---
+
 The **Australia Major Projects Atlas** is an independent GIS and data visualisation project exploring where major investment projects are located, how they connect to surrounding regions, and what they may mean for communities, infrastructure and employment.
 
 The atlas is designed as a growing collection of national and project-specific maps. It brings together a searchable national explorer, detailed map briefs, interactive web maps, ArcGIS StoryMaps and other visual products.
@@ -12,7 +20,7 @@ The atlas is designed as a growing collection of national and project-specific m
 
 ### Major Projects Explorer
 
-The ![**Major Projects Explorer**](https://yusufaligeo5.github.io/Australia-Major-Projects-Atlas/) is the main national map. It allows users to:
+The **Major Projects Explorer** is the main national map. It allows users to:
 
 - search for major projects across Australia;
 - filter projects by location and project type;
