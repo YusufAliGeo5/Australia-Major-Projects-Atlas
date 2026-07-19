@@ -9,12 +9,12 @@ const MAP = {
 };
 
 const CATEGORY_STYLE = {
-  "Critical minerals & resources": { color: "#b87827", short: "Critical minerals" },
-  "Renewable energy & hydrogen": { color: "#238d68", short: "Renewables & hydrogen" },
-  "Offshore wind": { color: "#2f78b7", short: "Offshore wind" },
-  "Advanced manufacturing": { color: "#7d5bb5", short: "Advanced manufacturing" },
-  "Carbon management": { color: "#57687a", short: "Carbon management" },
-  "Digital infrastructure": { color: "#b84968", short: "Digital infrastructure" },
+  "Critical minerals & resources": { color: "#bf8438", short: "Critical minerals" },
+  "Renewable energy & hydrogen": { color: "#159f93", short: "Renewables & hydrogen" },
+  "Offshore wind": { color: "#337fbe", short: "Offshore wind" },
+  "Advanced manufacturing": { color: "#8e65b5", short: "Advanced manufacturing" },
+  "Carbon management": { color: "#617684", short: "Carbon management" },
+  "Digital infrastructure": { color: "#c75a8d", short: "Digital infrastructure" },
 };
 
 const STATE_NAMES = {
@@ -311,7 +311,7 @@ function renderList() {
       <p class="project-card__proponent">${escapeHtml(project.proponent)}</p>
       <span class="project-card__meta">
         <span title="Location">${escapeHtml(project.state_display)} · ${escapeHtml(project.location.label)}</span>
-        <span title="Reported capital expenditure">${formatCurrency(project.capex_aud)}</span>
+        <span title="Reported investment">${formatCurrency(project.capex_aud)}</span>
       </span>`;
     card.addEventListener("click", () => openProject(project.id));
     fragment.append(card);
@@ -334,7 +334,7 @@ function updateStats() {
 
   elements.stats.projects.textContent = formatInteger(projects.length);
   elements.stats.projectsNote.textContent = projects.length === state.projects.length
-    ? "All projects in the supplied snapshot"
+    ? "All projects in the atlas"
     : `Filtered from ${state.projects.length} total projects`;
 
   elements.stats.capex.textContent = formatCompactCurrency(sumBy(capex, "capex_aud"));
@@ -394,7 +394,7 @@ function openProject(projectId) {
     </header>
     <div class="dialog-body">
       <div class="dialog-metrics" aria-label="Project metrics">
-        <div class="dialog-metric"><strong>${formatCurrency(project.capex_aud)}</strong><span>Reported capital expenditure</span></div>
+        <div class="dialog-metric"><strong>${formatCurrency(project.capex_aud)}</strong><span>Reported investment</span></div>
         <div class="dialog-metric"><strong>${formatIntegerOrDash(project.construction_jobs)}</strong><span>Construction jobs</span></div>
         <div class="dialog-metric"><strong>${formatIntegerOrDash(project.ongoing_jobs)}</strong><span>Ongoing jobs</span></div>
       </div>
@@ -408,7 +408,7 @@ function openProject(projectId) {
         <h3>Project overview</h3>
         ${paragraphs}
       </section>
-      <p class="dialog-source-note">Location precision: ${escapeHtml(project.location.precision)}. ${escapeHtml(source.location_note)} <a href="${escapeAttribute(source.url)}" target="_blank" rel="noreferrer">View source dataset ↗</a></p>
+      <p class="dialog-source-note">Location precision: ${escapeHtml(project.location.precision)}. ${escapeHtml(source.location_note)} <a href="${escapeAttribute(source.url)}" target="_blank" rel="noreferrer">View source information ↗</a></p>
     </div>`;
 
   if (typeof elements.dialog.showModal === "function") {
@@ -473,8 +473,8 @@ function escapeAttribute(value) {
 }
 
 function bindEvents() {
-  [elements.search, elements.stateFilter, elements.categoryFilter].forEach((control) => {
-    control.addEventListener("input", applyFilters);
+  elements.search.addEventListener("input", applyFilters);
+  [elements.stateFilter, elements.categoryFilter].forEach((control) => {
     control.addEventListener("change", applyFilters);
   });
   elements.sortFilter.addEventListener("change", applyFilters);
@@ -496,13 +496,13 @@ function applySourceMetadata() {
   const source = state.meta.source;
   elements.heroSourceLink.href = source.url;
   elements.footerSourceLink.href = source.url;
-  elements.snapshotLabel.textContent = `Repository snapshot: ${formatDate(source.repository_snapshot_date)}`;
+  elements.snapshotLabel.textContent = `Information reviewed: ${formatDate(source.repository_snapshot_date)}`;
 }
 
 function showFatalError(error) {
   console.error(error);
-  elements.mapStage.innerHTML = `<div class="map-error" role="alert">The project map could not be loaded. Run the repository through a local web server and confirm the generated data files are present.</div>`;
-  elements.projectList.innerHTML = `<p class="empty-state">Project data could not be loaded.</p>`;
+  elements.mapStage.innerHTML = `<div class="map-error" role="alert">The project map could not be loaded. Please refresh the page or try again later.</div>`;
+  elements.projectList.innerHTML = `<p class="empty-state">Project information could not be loaded.</p>`;
   elements.resultCount.textContent = "Unavailable";
 }
 

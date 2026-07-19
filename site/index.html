@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore Australian projects currently holding Major Project Status, with filters for state, sector, investment and jobs.">
-  <title>Australia Major Projects Map</title>
+  <meta name="description" content="Explore the geography of major investment, infrastructure, jobs and regional opportunity across Australia.">
+  <meta name="theme-color" content="#111e2c">
+  <title>Australia Major Projects Atlas</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/app.js" defer></script>
 </head>
@@ -14,36 +16,46 @@
   <header class="hero">
     <div class="hero__inner shell">
       <div class="hero__copy">
-        <p class="eyebrow">Australian Major Project Status</p>
-        <h1>Australia’s next wave of major projects</h1>
-        <p class="hero__lede">Explore major investments in critical minerals, renewable energy, hydrogen, advanced manufacturing and infrastructure.</p>
+        <p class="eyebrow">National project explorer</p>
+        <h1>
+          <span>Australia Major</span>
+          <span class="hero__title-accent">Projects Atlas</span>
+        </h1>
+        <p class="hero__lede">Explore the geography of major investment, infrastructure, employment and regional opportunity across Australia.</p>
+        <div class="hero__actions">
+          <a class="primary-button" href="#project-explorer">Explore the map</a>
+          <a class="source-pill" id="hero-source-link" href="https://business.gov.au/grants-and-programs/major-project-status/current-major-projects" target="_blank" rel="noreferrer">
+            <span>View government source</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
-      <a class="source-pill" id="hero-source-link" href="https://business.gov.au/grants-and-programs/major-project-status/current-major-projects" target="_blank" rel="noreferrer">
-        <span>Source dataset</span>
-        <span aria-hidden="true">↗</span>
-      </a>
+
+      <div class="hero__art" aria-hidden="true">
+        <img src="assets/atlas-hero.svg" alt="">
+      </div>
     </div>
 
     <div class="stats shell" aria-label="Summary of visible projects">
       <article class="stat-card">
         <p class="stat-card__value" id="stat-projects">—</p>
-        <p class="stat-card__label">Visible projects</p>
-        <p class="stat-card__note" id="stat-projects-note">Loading dataset</p>
+        <p class="stat-card__label">Projects shown</p>
+        <p class="stat-card__note" id="stat-projects-note">Loading atlas</p>
       </article>
       <article class="stat-card">
         <p class="stat-card__value" id="stat-capex">—</p>
-        <p class="stat-card__label">Reported capital</p>
-        <p class="stat-card__note" id="stat-capex-note">Loading dataset</p>
+        <p class="stat-card__label">Reported investment</p>
+        <p class="stat-card__note" id="stat-capex-note">Loading atlas</p>
       </article>
       <article class="stat-card">
         <p class="stat-card__value" id="stat-construction">—</p>
         <p class="stat-card__label">Construction jobs</p>
-        <p class="stat-card__note" id="stat-construction-note">Loading dataset</p>
+        <p class="stat-card__note" id="stat-construction-note">Loading atlas</p>
       </article>
       <article class="stat-card">
         <p class="stat-card__value" id="stat-ongoing">—</p>
         <p class="stat-card__label">Ongoing jobs</p>
-        <p class="stat-card__note" id="stat-ongoing-note">Loading dataset</p>
+        <p class="stat-card__note" id="stat-ongoing-note">Loading atlas</p>
       </article>
     </div>
   </header>
@@ -76,7 +88,7 @@
         <span class="control__label">Sort project list</span>
         <select id="sort-filter">
           <option value="id">Map number</option>
-          <option value="capex">Reported capital</option>
+          <option value="capex">Reported investment</option>
           <option value="expiry">Status expiry</option>
           <option value="name">Project name</option>
         </select>
@@ -89,8 +101,8 @@
       <section class="map-card" aria-labelledby="map-title">
         <div class="panel-heading">
           <div>
-            <p class="eyebrow eyebrow--dark">National view</p>
-            <h2 id="map-title">Project map</h2>
+            <p class="eyebrow eyebrow--dark">Australia at a glance</p>
+            <h2 id="map-title">National project map</h2>
           </div>
           <p class="panel-heading__note">Select a numbered marker to open project details.</p>
         </div>
@@ -109,8 +121,8 @@
       <aside class="list-card" aria-labelledby="list-title">
         <div class="panel-heading panel-heading--list">
           <div>
-            <p class="eyebrow eyebrow--dark">Project register</p>
-            <h2 id="list-title">Projects</h2>
+            <p class="eyebrow eyebrow--dark">Browse the atlas</p>
+            <h2 id="list-title">Project index</h2>
           </div>
           <p class="result-count" id="result-count" aria-live="polite">Loading…</p>
         </div>
@@ -126,13 +138,16 @@
 
   <footer class="site-footer">
     <div class="shell site-footer__inner">
-      <div>
-        <strong>Australia Major Projects Map</strong>
-        <p>Built from the repository’s supplied project-status snapshot with a reproducible data pipeline.</p>
+      <div class="site-footer__brand">
+        <img src="assets/favicon.svg" alt="" aria-hidden="true">
+        <div>
+          <strong>Australia Major Projects Atlas</strong>
+          <p>Independent mapping and visualisation of major projects and regional opportunity across Australia.</p>
+        </div>
       </div>
       <div class="site-footer__meta">
-        <span id="snapshot-label">Dataset snapshot</span>
-        <a id="footer-source-link" href="https://business.gov.au/grants-and-programs/major-project-status/current-major-projects" target="_blank" rel="noreferrer">View government source ↗</a>
+        <span id="snapshot-label">Information date</span>
+        <a id="footer-source-link" href="https://business.gov.au/grants-and-programs/major-project-status/current-major-projects" target="_blank" rel="noreferrer">View source information ↗</a>
       </div>
     </div>
   </footer>
