@@ -12,7 +12,7 @@ The atlas is designed as a growing collection of national and project-specific m
 
 ### Major Projects Explorer
 
-The **Major Projects Explorer** is the main national map. It allows users to:
+The ![**Major Projects Explorer**](https://yusufaligeo5.github.io/Australia-Major-Projects-Atlas/) is the main national map. It allows users to:
 
 - search for major projects across Australia;
 - filter projects by location and project type;
