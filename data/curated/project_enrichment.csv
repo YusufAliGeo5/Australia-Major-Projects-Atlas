@@ -1,0 +1,31 @@
+Map legend,Category,Location label,Latitude,Longitude,Location precision,Location basis,Marker dx,Marker dy
+1,Critical minerals & resources,"Ammaroo, Northern Territory",-21.68,135.32,regional,"Project description and published source map",0,0
+2,Renewable energy & hydrogen,"Barkly region, Northern Territory",-19.65,134.19,regional,"Project description and published source map",0,0
+3,Renewable energy & hydrogen,"Pilbara region, Western Australia",-21.80,119.50,regional,"Project description and published source map",0,0
+4,Carbon management,"Middle Arm, Darwin, Northern Territory",-12.55,130.86,regional,"Project description; offshore injection site not represented",0,0
+5,Offshore wind,"Offshore Gippsland near Seaspray, Victoria",-38.45,147.25,regional,"Project description and published source map",12,4
+6,Critical minerals & resources,"Broken Hill, New South Wales",-31.95,141.45,regional,"Project description",0,0
+7,Renewable energy & hydrogen,"Cape Hardy, Eyre Peninsula, South Australia",-34.22,136.34,regional,"Project description",-20,-8
+8,Critical minerals & resources,"Donald–Minyip district, Victoria",-36.37,142.98,regional,"Project description",0,0
+9,Critical minerals & resources,"Fingerboards, East Gippsland, Victoria",-37.72,147.32,regional,"Published source map and project locality",0,0
+10,Critical minerals & resources,"Gonneville district, north-east of Perth, Western Australia",-31.30,116.55,regional,"Project description",-12,-5
+11,Critical minerals & resources,"Loddon Mallee region, Victoria",-35.55,143.25,regional,"Project description and published source map",0,0
+12,Critical minerals & resources,"Goongarrie, north of Kalgoorlie-Boulder, Western Australia",-29.90,121.35,regional,"Project description",0,0
+13,Critical minerals & resources,"West Arunta region, Western Australia",-22.00,127.70,regional,"Project description and published source map",0,0
+14,Renewable energy & hydrogen,"Murchison House Station, Western Australia",-27.56,114.30,regional,"Project description",0,0
+15,Critical minerals & resources,"Near Mount Kilkenny and Leonora, Western Australia",-28.78,121.70,regional,"Project locality",0,0
+16,Critical minerals & resources,"North of Hope Vale, Far North Queensland",-14.98,145.18,regional,"Project locality",0,0
+17,Advanced manufacturing,"Lansdown, south of Townsville, Queensland",-19.68,146.84,regional,"Project locality",-14,8
+18,Digital infrastructure,"Murranji Station, Barkly region, Northern Territory",-17.25,133.25,regional,"Project description and project locality",-13,-6
+19,Advanced manufacturing,"Townsville region, Queensland",-19.52,146.82,regional,"Project locality",14,-8
+20,Renewable energy & hydrogen,"Murranji Station and Barkly region, Northern Territory",-17.36,133.38,regional,"Project description and project locality",13,6
+21,Critical minerals & resources,"Razorback district, north-east South Australia",-32.31,139.75,regional,"Published source map and project locality",0,0
+22,Critical minerals & resources,"Siviour, Eyre Peninsula, South Australia",-33.38,136.57,regional,"Project description",0,14
+23,Critical minerals & resources,"Speewah, East Kimberley, Western Australia",-16.20,128.18,regional,"Project description",0,0
+24,Offshore wind,"Offshore Gippsland, Victoria",-38.70,146.90,regional,"Project description and published source map",-12,-5
+25,Critical minerals & resources,"Uley, Eyre Peninsula, South Australia",-34.80,135.73,regional,"Project description",20,-8
+26,Critical minerals & resources,"Near Parkes, New South Wales",-33.13,148.18,regional,"Project description",0,0
+27,Renewable energy & hydrogen,"Maitland Strategic Industrial Area near Karratha, Western Australia",-20.73,116.80,regional,"Project description",0,0
+28,Advanced manufacturing,"Rockingham Industrial Zone, Western Australia",-32.29,115.76,regional,"Project description",12,7
+29,Renewable energy & hydrogen,"Nullarbor Plain, south-east Western Australia",-31.45,126.60,regional,"Project description",0,0
+30,Critical minerals & resources,"Wingellina, WA–SA–NT border region",-26.05,128.94,regional,"Project description and published source map",0,0

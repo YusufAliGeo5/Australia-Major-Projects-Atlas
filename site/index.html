@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Australian projects currently holding Major Project Status, with filters for state, sector, investment and jobs.">
+  <title>Australia Major Projects Map</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#project-explorer">Skip to project explorer</a>
+
+  <header class="hero">
+    <div class="hero__inner shell">
+      <div class="hero__copy">
+        <p class="eyebrow">Australian Major Project Status</p>
+        <h1>Australia’s next wave of major projects</h1>
+        <p class="hero__lede">Explore major investments in critical minerals, renewable energy, hydrogen, advanced manufacturing and infrastructure.</p>
+      </div>
+      <a class="source-pill" id="hero-source-link" href="https://business.gov.au/grants-and-programs/major-project-status/current-major-projects" target="_blank" rel="noreferrer">
+        <span>Source dataset</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div class="stats shell" aria-label="Summary of visible projects">
+      <article class="stat-card">
+        <p class="stat-card__value" id="stat-projects">—</p>
+        <p class="stat-card__label">Visible projects</p>
+        <p class="stat-card__note" id="stat-projects-note">Loading dataset</p>
+      </article>
+      <article class="stat-card">
+        <p class="stat-card__value" id="stat-capex">—</p>
+        <p class="stat-card__label">Reported capital</p>
+        <p class="stat-card__note" id="stat-capex-note">Loading dataset</p>
+      </article>
+      <article class="stat-card">
+        <p class="stat-card__value" id="stat-construction">—</p>
+        <p class="stat-card__label">Construction jobs</p>
+        <p class="stat-card__note" id="stat-construction-note">Loading dataset</p>
+      </article>
+      <article class="stat-card">
+        <p class="stat-card__value" id="stat-ongoing">—</p>
+        <p class="stat-card__label">Ongoing jobs</p>
+        <p class="stat-card__note" id="stat-ongoing-note">Loading dataset</p>
+      </article>
+    </div>
+  </header>
+
+  <main class="shell explorer" id="project-explorer">
+    <section class="controls" aria-label="Project filters">
+      <label class="control control--search">
+        <span class="control__label">Search projects</span>
+        <span class="search-field">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+          <input id="search-input" type="search" placeholder="Project, proponent or location" autocomplete="off">
+        </span>
+      </label>
+
+      <label class="control">
+        <span class="control__label">State or territory</span>
+        <select id="state-filter">
+          <option value="all">All jurisdictions</option>
+        </select>
+      </label>
+
+      <label class="control">
+        <span class="control__label">Project category</span>
+        <select id="category-filter">
+          <option value="all">All categories</option>
+        </select>
+      </label>
+
+      <label class="control">
+        <span class="control__label">Sort project list</span>
+        <select id="sort-filter">
+          <option value="id">Map number</option>
+          <option value="capex">Reported capital</option>
+          <option value="expiry">Status expiry</option>
+          <option value="name">Project name</option>
+        </select>
+      </label>
+
+      <button class="clear-button" id="clear-filters" type="button" disabled>Clear filters</button>
+    </section>
+
+    <div class="explorer-grid">
+      <section class="map-card" aria-labelledby="map-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow eyebrow--dark">National view</p>
+            <h2 id="map-title">Project map</h2>
+          </div>
+          <p class="panel-heading__note">Select a numbered marker to open project details.</p>
+        </div>
+
+        <div class="map-stage" id="map-stage">
+          <div class="map-loading" id="map-loading" role="status">Loading project map…</div>
+          <div class="map-tooltip" id="map-tooltip" role="tooltip" hidden></div>
+        </div>
+
+        <div class="map-footer">
+          <p><strong>Location note:</strong> markers are approximate regional reference points, not site boundaries.</p>
+          <div class="legend" id="map-legend" aria-label="Project category legend"></div>
+        </div>
+      </section>
+
+      <aside class="list-card" aria-labelledby="list-title">
+        <div class="panel-heading panel-heading--list">
+          <div>
+            <p class="eyebrow eyebrow--dark">Project register</p>
+            <h2 id="list-title">Projects</h2>
+          </div>
+          <p class="result-count" id="result-count" aria-live="polite">Loading…</p>
+        </div>
+        <div class="project-list" id="project-list"></div>
+      </aside>
+    </div>
+  </main>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" id="dialog-close" aria-label="Close project details">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <div>
+        <strong>Australia Major Projects Map</strong>
+        <p>Built from the repository’s supplied project-status snapshot with a reproducible data pipeline.</p>
+      </div>
+      <div class="site-footer__meta">
+        <span id="snapshot-label">Dataset snapshot</span>
+        <a id="footer-source-link" href="https://business.gov.au/grants-and-programs/major-project-status/current-major-projects" target="_blank" rel="noreferrer">View government source ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>This map requires JavaScript to load and filter the project dataset.</noscript>
+</body>
+</html>

@@ -1,0 +1,851 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "project_count": 30,
+    "reported_capex_aud": 304846300000,
+    "capex_project_count": 29,
+    "reported_construction_jobs": 35424,
+    "construction_jobs_project_count": 28,
+    "reported_ongoing_jobs": 14385,
+    "ongoing_jobs_project_count": 29,
+    "categories": {
+      "Advanced manufacturing": 3,
+      "Carbon management": 1,
+      "Critical minerals & resources": 16,
+      "Digital infrastructure": 1,
+      "Offshore wind": 2,
+      "Renewable energy & hydrogen": 7
+    },
+    "states": {
+      "NSW": 2,
+      "NT": 6,
+      "QLD": 3,
+      "SA": 5,
+      "VIC": 5,
+      "WA": 11
+    },
+    "raw_sha256": "a671a1328e7527eb0776d7567d4fd4037cab30f4d945ccec6ce80f29b1e5965c",
+    "source": {
+      "title": "Current Major Projects",
+      "publisher": "Australian Government — business.gov.au",
+      "url": "https://business.gov.au/grants-and-programs/major-project-status/current-major-projects",
+      "repository_snapshot_date": "2026-05-26",
+      "snapshot_date_basis": "Timestamp on the repository files supplied for this project",
+      "location_note": "Coordinates are curated regional reference points derived from project descriptions and the published source map. They are approximate and are not site boundaries."
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Ammaroo Phosphate Project",
+      "proponent": "Verdant Minerals Pty Ltd",
+      "description": "The Ammaroo Phosphate Project is a two-stage development: Stage 1 proposes a phosphate rock and extraction open cut mine at the Ammaroo deposit and a beneficiation and chemical plant complex built on the Ammaroo mining leases. Stage 2 aims to see the development of a value-added processing facility designed to produce granulated fertilisers for use within Australia and for export to targeted markets in Asia.\n\nThe Project has a projected capital expenditure of $3.5 billion and would create about 250 construction jobs and 375 ongoing jobs.",
+      "state_display": "NT",
+      "state_codes": [
+        "NT"
+      ],
+      "status_granted": "2024-02-20",
+      "status_expires": "2027-02-20",
+      "capex_aud": 3500000000,
+      "construction_jobs": 250,
+      "ongoing_jobs": 375,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Ammaroo, Northern Territory",
+        "latitude": -21.68,
+        "longitude": 135.32,
+        "precision": "regional",
+        "basis": "Project description and published source map",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Australia-Asia Power Link (AAPowerLink)",
+      "proponent": "SunCable Holdings Pty Ltd",
+      "description": "The Australia-Asia PowerLink Project proposes a renewable energy project located in the Barkly region of the Northern Territory, approximately 800km south of Darwin. Up to 6GW of clean electricity is intended to be delivered to support decarbonisation and green industrial development in Darwin and Southeast Asia.\n\nThe Project has a projected capital expenditure of $60 billion and would create about 1,750 construction jobs and 350 ongoing jobs.",
+      "state_display": "NT",
+      "state_codes": [
+        "NT"
+      ],
+      "status_granted": "2025-06-11",
+      "status_expires": "2028-06-11",
+      "capex_aud": 60000000000,
+      "construction_jobs": 1750,
+      "ongoing_jobs": 350,
+      "category": "Renewable energy & hydrogen",
+      "location": {
+        "label": "Barkly region, Northern Territory",
+        "latitude": -19.65,
+        "longitude": 134.19,
+        "precision": "regional",
+        "basis": "Project description and published source map",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Australian Renewable Energy Hub (AREH)",
+      "proponent": "Australian Renewable Energy Hub Pty Ltd",
+      "description": "AREH proposes the development of renewable power and green hydrogen to support decarbonisation of the Pilbara and beyond. The Project is planned to be developed in phases, initially focused on supplying renewable power and green hydrogen to customers in the Pilbara. Future phases will look to produce additional domestic green hydrogen and also supply green ammonia for export customers.\n\nThe Project has a projected capital expenditure of $30 billion and would create about 3,000 ongoing jobs.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2024-05-22",
+      "status_expires": "2027-05-22",
+      "capex_aud": 30000000000,
+      "construction_jobs": null,
+      "ongoing_jobs": 3000,
+      "category": "Renewable energy & hydrogen",
+      "location": {
+        "label": "Pilbara region, Western Australia",
+        "latitude": -21.8,
+        "longitude": 119.5,
+        "precision": "regional",
+        "basis": "Project description and published source map",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Bonaparte Carbon Capture and Storage Project",
+      "proponent": "INPEX Browse E&P Australia Pty Ltd",
+      "description": "The Bonaparte Carbon Capture and Storage Project is intended to be located at the Darwin Middle Arm Sustainable Development Precinct (MASDP) and connected via a 250 km undersea pipeline to an injection site west of Darwin.\n\nThe Project is expected to sequester a minimum of 10 million tonnes of CO2 per annum over its 20-year lifespan.\n\nThe Project has a projected capital expenditure of $3.5 billion and would create about 370 construction jobs and 40 ongoing jobs.",
+      "state_display": "NT",
+      "state_codes": [
+        "NT"
+      ],
+      "status_granted": "2025-06-11",
+      "status_expires": "2028-06-11",
+      "capex_aud": 3500000000,
+      "construction_jobs": 370,
+      "ongoing_jobs": 40,
+      "category": "Carbon management",
+      "location": {
+        "label": "Middle Arm, Darwin, Northern Territory",
+        "latitude": -12.55,
+        "longitude": 130.86,
+        "precision": "regional",
+        "basis": "Project description; offshore injection site not represented",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Blue Mackerel Offshore Wind Project",
+      "proponent": "JERA Nex bp",
+      "description": "The Project is in the Gippsland offshore wind zone, approximately 10km from Seaspray, Victoria. Blue Mackerel propose to construct and operate up to 69 wind turbines with an installed capacity of 1GW - providing a sustainable and low emissions solution to support Australia’s transition to a cleaner future for up to 40 years.\n\nThe Project has an estimated capital expenditure of $6.5 billion and would create about 1500 construction jobs and 200 ongoing jobs.",
+      "state_display": "VIC",
+      "state_codes": [
+        "VIC"
+      ],
+      "status_granted": "2025-11-14",
+      "status_expires": "2028-11-14",
+      "capex_aud": 6500000000,
+      "construction_jobs": 1500,
+      "ongoing_jobs": 200,
+      "category": "Offshore wind",
+      "location": {
+        "label": "Offshore Gippsland near Seaspray, Victoria",
+        "latitude": -38.45,
+        "longitude": 147.25,
+        "precision": "regional",
+        "basis": "Project description and published source map",
+        "marker_offset": {
+          "x": 12.0,
+          "y": 4.0
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Broken Hill Cobalt Project",
+      "proponent": "Cobalt Blue Holdings Limited",
+      "description": "The Broken Hill Cobalt Project aims to produce high purity cobalt sulphate from a large cobalt deposit near Broken Hill, NSW, for use in the manufacture of lithium ion batteries globally. The Project also aims to produce elemental sulphur, a key ingredient in fertiliser production, to help reduce Australia’s dependence on fertiliser imports.\n\nThe Project has a projected capital expenditure of $0.728 billion and would create about 20 construction jobs and 350 ongoing jobs.",
+      "state_display": "NSW",
+      "state_codes": [
+        "NSW"
+      ],
+      "status_granted": "2025-06-11",
+      "status_expires": "2028-06-11",
+      "capex_aud": 728000000,
+      "construction_jobs": 20,
+      "ongoing_jobs": 350,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Broken Hill, New South Wales",
+        "latitude": -31.95,
+        "longitude": 141.45,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Cape Hardy Green Hydrogen Project",
+      "proponent": "Revera Energy",
+      "description": "The Cape Hardy Green Hydrogen Project is a proposed green hydrogen and ammonia production facility located at Cape Hardy on the eastern coast of the Eyre Peninsula in South Australia.\n\nThe facility intends to generate renewable energy through a mix of wind and solar over two stages. Stage 1 aims for 1 GW electrolyser capacity, with an incremental increase of 4GW in electrolyser capacity in stage 2, giving a total of 5GW electrolyser capacity.\n\nThe Project has a projected capital expenditure of $35 billion and would create about 2,000 construction jobs and 500 ongoing jobs.",
+      "state_display": "SA",
+      "state_codes": [
+        "SA"
+      ],
+      "status_granted": "2024-10-10",
+      "status_expires": "2027-10-10",
+      "capex_aud": 35000000000,
+      "construction_jobs": 2000,
+      "ongoing_jobs": 500,
+      "category": "Renewable energy & hydrogen",
+      "location": {
+        "label": "Cape Hardy, Eyre Peninsula, South Australia",
+        "latitude": -34.22,
+        "longitude": 136.34,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": -20.0,
+          "y": -8.0
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Donald Rare Earth and Minerals Project",
+      "proponent": "Astron Limited",
+      "description": "The Donald Rare Earth and Mineral Sands Project, located in Victoria’s Murray Basin near Minyip and Donald, is set to become a globally significant source of critical minerals. With a resource exceeding 2.4 billion tonnes of ore containing zirconium, titanium, and rare earth elements such as neodymium and praseodymium, the Project will support technologies vital to clean energy, defence, and advanced manufacturing.\n\nThe Project has a projected capital expenditure of $0.392 billion and would create about 100 construction jobs and 220 ongoing jobs.",
+      "state_display": "VIC",
+      "state_codes": [
+        "VIC"
+      ],
+      "status_granted": "2025-10-10",
+      "status_expires": "2028-10-10",
+      "capex_aud": 392000000,
+      "construction_jobs": 100,
+      "ongoing_jobs": 220,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Donald–Minyip district, Victoria",
+        "latitude": -36.37,
+        "longitude": 142.98,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Fingerboards Project",
+      "proponent": "Gippsland Critical Minerals",
+      "description": "The Fingerboards Mineral Sands Project is a critical minerals development expected to produce approximately 200 tpa of heavy rare earth oxides, including dysprosium and terbium. It will also deliver around 1,800 tpa of light rare earth oxides such as neodymium and praseodymium, along with about 75,000 tpa of zircon.\n\nThe Project has a projected capital expenditure of $0.295 billion and would create about 400 construction jobs and 262 ongoing jobs.",
+      "state_display": "VIC",
+      "state_codes": [
+        "VIC"
+      ],
+      "status_granted": "2026-02-11",
+      "status_expires": "2029-02-11",
+      "capex_aud": 295000000,
+      "construction_jobs": 400,
+      "ongoing_jobs": 262,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Fingerboards, East Gippsland, Victoria",
+        "latitude": -37.72,
+        "longitude": 147.32,
+        "precision": "regional",
+        "basis": "Published source map and project locality",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "Gonneville Critical Minerals Project",
+      "proponent": "Chalice Mining Limited",
+      "description": "The Gonneville Critical Minerals Project proposes a critical minerals mining and processing development located on Proponent-owned farmland 70Kms northeast of Perth.\n\nThe Project is targeting platinum group elements (PGE) minerals that are critical for decarbonisation and the clean energy transformation, with growing demand for use in electric vehicles, energy storage, renewable energy technologies and green hydrogen.\n\nThe Project has a projected capital expenditure of $1.6 billion and would create about 1,200 construction jobs and 500 ongoing jobs.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2024-10-10",
+      "status_expires": "2027-10-10",
+      "capex_aud": 1600000000,
+      "construction_jobs": 1200,
+      "ongoing_jobs": 500,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Gonneville district, north-east of Perth, Western Australia",
+        "latitude": -31.3,
+        "longitude": 116.55,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": -12.0,
+          "y": -5.0
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "Goschen Rare Earth Mineral Sands Project",
+      "proponent": "VHM Limited",
+      "description": "The Goschen Rare Earths Mineral Sands Project proposes an integrated critical minerals mining and processing asset in Victoria’s Loddon Mallee Region. The Project aims to develop a combination of rare earth oxide products, mixed heavy rare earth carbonate concentrates, and zirconium and titanium minerals.\n\nThe Project has a projected capital expenditure of $0.606 billion and would create about 200 construction jobs and 400 ongoing jobs.",
+      "state_display": "VIC",
+      "state_codes": [
+        "VIC"
+      ],
+      "status_granted": "2025-02-18",
+      "status_expires": "2028-02-18",
+      "capex_aud": 606000000,
+      "construction_jobs": 200,
+      "ongoing_jobs": 400,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Loddon Mallee region, Victoria",
+        "latitude": -35.55,
+        "longitude": 143.25,
+        "precision": "regional",
+        "basis": "Project description and published source map",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "Kalgoorlie Nickel Project",
+      "proponent": "Ardea Resources Limited",
+      "description": "The Goongarrie Nickel-Cobalt Hub is a major mining and processing initiative located approximately 75 kilometres north of Kalgoorlie-Boulder in Western Australia’s Eastern Goldfields region.\n\nThe project proposes the development of long-life open pit mines and associated processing infrastructure to produce high-quality nickel and cobalt in the form of Mixed Sulphide Precipitate (MSP).\n\nThe project has a capital expenditure of $3.1 billion and is expected to create around 3,000 construction jobs and 800 ongoing operational jobs.\n\nRegulatory services being provided by the Investor Front Door.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2025-10-10",
+      "status_expires": "2028-10-10",
+      "capex_aud": 3100000000,
+      "construction_jobs": 3000,
+      "ongoing_jobs": 800,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Goongarrie, north of Kalgoorlie-Boulder, Western Australia",
+        "latitude": -29.9,
+        "longitude": 121.35,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "Luni Niobium Project",
+      "proponent": "WA1 Resources Ltd",
+      "description": "Niobium is a critical mineral used primarily to strengthen steel for automotive, construction and energy infrastructure, and is increasingly important in advanced technologies such as superalloys, aerospace and defence components and medical equipment. Luni’s scale and grade position it to be able to produce niobium products for customers in established and emerging markets.\n\nThe project is finalising key project metrics, however, exceeds the Major Project Status eligibility threshold of $50 million CAPEX and is anticipated to create hundreds of jobs.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2025-11-14",
+      "status_expires": "2028-11-14",
+      "capex_aud": null,
+      "construction_jobs": null,
+      "ongoing_jobs": null,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "West Arunta region, Western Australia",
+        "latitude": -22.0,
+        "longitude": 127.7,
+        "precision": "regional",
+        "basis": "Project description and published source map",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 14,
+      "name": "Murchison Green Hydrogen Project",
+      "proponent": "Murchison Hydrogen Renewables Pty Ltd as trustee for the Murchison Hydrogen Renewables Project Trust",
+      "description": "The Murchison Project proposes a green-field, power-to-ammonia project located on the Murchison House pastoral station in the mid-west region of Western Australia. The Project would use combined onshore wind and solar energy to produce green ammonia.\n\nThe Project has a projected capital expenditure of $15 billion and would create about 2,500 construction and 600 ongoing jobs.\n\nRegulatory services being provided by the Investor Front Door.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2024-04-08",
+      "status_expires": "2027-04-08",
+      "capex_aud": 15000000000,
+      "construction_jobs": 2500,
+      "ongoing_jobs": 600,
+      "category": "Renewable energy & hydrogen",
+      "location": {
+        "label": "Murchison House Station, Western Australia",
+        "latitude": -27.56,
+        "longitude": 114.3,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 15,
+      "name": "NiWest Nickel Cobalt Project",
+      "proponent": "Alliance Nickel Limited",
+      "description": "The NiWest Project aims to produce high purity nickel and cobalt sulphate products from large nickel-cobalt deposits located in the West Australian Nickel belt. Once operational, the project is expected to produce 90,000 tonnes of nickel sulphate and 7,000 tonnes of cobalt sulphate annually for use in the manufacture of electric vehicle batteries.\n\nThe Project has a projected capital expenditure of $1.26 billion and would create about 600 construction jobs and 438 ongoing jobs.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2024-05-01",
+      "status_expires": "2027-05-01",
+      "capex_aud": 1260000000,
+      "construction_jobs": 600,
+      "ongoing_jobs": 438,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Near Mount Kilkenny and Leonora, Western Australia",
+        "latitude": -28.78,
+        "longitude": 121.7,
+        "precision": "regional",
+        "basis": "Project locality",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "Northern Silica Project",
+      "proponent": "Diatreme Resources Limited",
+      "description": "The Northern Silica Project aims to produce 3 to 5 million tonnes of silica sand annually over 25 years. The high-purity silica sand mining development will supply essential materials for domestic manufacture of solar panels, silicon wafers and high-end electronics.\n\nThe Project has a projected capital expenditure of $0.535 billion and would create about 120 construction jobs and 90 ongoing jobs.",
+      "state_display": "QLD",
+      "state_codes": [
+        "QLD"
+      ],
+      "status_granted": "2025-06-11",
+      "status_expires": "2028-06-11",
+      "capex_aud": 535000000,
+      "construction_jobs": 120,
+      "ongoing_jobs": 90,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "North of Hope Vale, Far North Queensland",
+        "latitude": -14.98,
+        "longitude": 145.18,
+        "precision": "regional",
+        "basis": "Project locality",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "Northern Quartz Campus",
+      "proponent": "Solquartz Pty Ltd",
+      "description": "The Northern Quartz Campus project includes a 30,000 t pa capacity biocarbon production facility, a 780 MW battery energy storage system, 515 MW of solar generation and 50,000 tpa metallurgical grade silicon production facility.\n\nThe Project has an estimated capital expenditure of up to $4.5 billion and is expected to create about 1,200 construction jobs and 2,000 ongoing jobs.",
+      "state_display": "QLD",
+      "state_codes": [
+        "QLD"
+      ],
+      "status_granted": "2026-02-11",
+      "status_expires": "2029-02-11",
+      "capex_aud": 4500000000,
+      "construction_jobs": 1200,
+      "ongoing_jobs": 2000,
+      "category": "Advanced manufacturing",
+      "location": {
+        "label": "Lansdown, south of Townsville, Queensland",
+        "latitude": -19.68,
+        "longitude": 146.84,
+        "precision": "regional",
+        "basis": "Project locality",
+        "marker_offset": {
+          "x": -14.0,
+          "y": 8.0
+        }
+      }
+    },
+    {
+      "id": 18,
+      "name": "Project Ares",
+      "proponent": "Energy North Pty Ltd",
+      "description": "Project Ares is a proposed hyperscale data centre development at Murranji Station in the Northern Territory, approximately 370 km south of Katherine. The project will be delivered in stages, with an initial 500 MW facility powered by integrated renewable energy, with potential expansion to 1 GW.\n\nThe project has a projected capital expenditure of around A$11.9 billion and is expected to create approximately 4,400 construction jobs and up to 300 ongoing jobs.",
+      "state_display": "NT",
+      "state_codes": [
+        "NT"
+      ],
+      "status_granted": "2026-04-28",
+      "status_expires": "2029-04-28",
+      "capex_aud": 11900000000,
+      "construction_jobs": 4400,
+      "ongoing_jobs": 300,
+      "category": "Digital infrastructure",
+      "location": {
+        "label": "Murranji Station, Barkly region, Northern Territory",
+        "latitude": -17.25,
+        "longitude": 133.25,
+        "precision": "regional",
+        "basis": "Project description and project locality",
+        "marker_offset": {
+          "x": -13.0,
+          "y": -6.0
+        }
+      }
+    },
+    {
+      "id": 19,
+      "name": "Project Clean Wafers",
+      "proponent": "Stellar PV Pty Ltd",
+      "description": "Project wafers will establish a commercial scale 2 GW silicon ingot and sustainable photovoltaic (PV) wafer manufacturing facility to support Australia’s emerging domestic solar supply chain.\n\nThe Project has a projected capital expenditure of $0.420 billion and would create about 410 construction jobs and 300 ongoing jobs.",
+      "state_display": "QLD",
+      "state_codes": [
+        "QLD"
+      ],
+      "status_granted": "2026-02-11",
+      "status_expires": "2029-02-11",
+      "capex_aud": 420000000,
+      "construction_jobs": 410,
+      "ongoing_jobs": 300,
+      "category": "Advanced manufacturing",
+      "location": {
+        "label": "Townsville region, Queensland",
+        "latitude": -19.52,
+        "longitude": 146.82,
+        "precision": "regional",
+        "basis": "Project locality",
+        "marker_offset": {
+          "x": 14.0,
+          "y": -8.0
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "Project Sol",
+      "proponent": "Energy North",
+      "description": "Project Sol is a multi-stage development in the Northern Territory, designed to produce large-scale green ammonia through a phased rollout - starting at 500 Ktpa and scaling to 4.7 Mtpa across four stages.\n\nThe project will utilise behind-the-metre solar and Battery Energy Storage Systems (BESS) in the Barkly region, supported by underground hydrogen pipeline infrastructure along the proposed Territory Energy Link corridor, transporting hydrogen to processing facilities at the Middle Arm Precinct near Darwin.\n\nGreen ammonia output is targeted for export to Japan, Korea, Singapore, and Europe. With a projected capital expenditure of $35 billion, Project Sol is expected to create around 3,000 construction jobs and 500 ongoing jobs.",
+      "state_display": "NT",
+      "state_codes": [
+        "NT"
+      ],
+      "status_granted": "2025-11-14",
+      "status_expires": "2028-11-14",
+      "capex_aud": 35000000000,
+      "construction_jobs": 3000,
+      "ongoing_jobs": 500,
+      "category": "Renewable energy & hydrogen",
+      "location": {
+        "label": "Murranji Station and Barkly region, Northern Territory",
+        "latitude": -17.36,
+        "longitude": 133.38,
+        "precision": "regional",
+        "basis": "Project description and project locality",
+        "marker_offset": {
+          "x": 13.0,
+          "y": 6.0
+        }
+      }
+    },
+    {
+      "id": 21,
+      "name": "Razorback Iron Ore Project",
+      "proponent": "Magnetite Mines Ltd",
+      "description": "The Razorback Iron Ore Project will produce 5 million tonnes per annum (Mtpa) of high-purity iron ore concentrate with a current mineral resource estimate of over three billion tonnes that includes up to two billion tonnes of probable ore reserves.\n\nThe project is part of the Green Iron SA consortium which intends to make South Australia a global leader in the low-carbon steel supply chain.\n\nThe Project has a projected capital expenditure of $1.86 billion and would create about 1,474 construction jobs and 450 ongoing jobs.",
+      "state_display": "SA",
+      "state_codes": [
+        "SA"
+      ],
+      "status_granted": "2026-02-11",
+      "status_expires": "2029-02-11",
+      "capex_aud": 1860000000,
+      "construction_jobs": 1474,
+      "ongoing_jobs": 450,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Razorback district, north-east South Australia",
+        "latitude": -32.31,
+        "longitude": 139.75,
+        "precision": "regional",
+        "basis": "Published source map and project locality",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 22,
+      "name": "Siviour Battery Anode Materials Project",
+      "proponent": "Renascor Resources Limited",
+      "description": "The Siviour Battery Anode Materials Project proposes an integrated graphite mine and battery anode material operation with a mine and concentrator located in South Australia's Eyre Peninsula, and a downstream purified spherical graphite manufacturing facility located in Port Adelaide. The Project would contribute to the global battery industry and electric vehicle markets.\n\nThe Project has a projected capital expenditure of $0.609 billion and would create about 200 construction jobs and 400 ongoing jobs.",
+      "state_display": "SA",
+      "state_codes": [
+        "SA"
+      ],
+      "status_granted": "2024-11-29",
+      "status_expires": "2027-11-29",
+      "capex_aud": 609000000,
+      "construction_jobs": 200,
+      "ongoing_jobs": 400,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Siviour, Eyre Peninsula, South Australia",
+        "latitude": -33.38,
+        "longitude": 136.57,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 14.0
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "Speewah Project",
+      "proponent": "Tivan Limited",
+      "description": "The Speewah Project, located in the East Kimberley region of Western Australia, proposes a staged approach to producing commercial grade fluorspar and vanadium electrolyte from two critical mineral deposits of fluorite and vanadium titanomagnetite.\n\nOnce operational, the Project aims to produce commercial grade fluorspar for use in electric vehicle and semiconductor manufacturing, contributing to diversification of Australia’s supply chains as the only fluorspar producer in Australia. Vanadium electrolyte is intended to be produced from vanadium titanomagnetite in a subsequent stage for use in vanadium redox flow batteries.\n\nThe first stage of the Project has a projected capital expenditure of $0.236 billion and would create about 300 construction jobs and 150 ongoing jobs.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2024-11-21",
+      "status_expires": "2027-11-21",
+      "capex_aud": 236000000,
+      "construction_jobs": 300,
+      "ongoing_jobs": 150,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Speewah, East Kimberley, Western Australia",
+        "latitude": -16.2,
+        "longitude": 128.18,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 24,
+      "name": "Star of the South Offshore Wind Farm",
+      "proponent": "Star of the South Wind Farm Pty Ltd",
+      "description": "The Star of the South Offshore Wind Farm Project, located off the Gippsland coast of Victoria, aims to be Australia’s first offshore wind project. When fully operational, the Project is expected to supply up to 2.2 gigawatts of renewable energy to the National Electricity Market, contributing up to 20 percent of Victoria’s electricity.\n\nThe Project comprises both offshore and onshore assets, including wind turbines, substation and platforms, a network of subsea cables, underground and overhead powerlines, and modified ports.\n\nThe Project has a projected capital expenditure of $8.7 billion and would create about 2,280 construction jobs and 300 ongoing jobs.",
+      "state_display": "VIC",
+      "state_codes": [
+        "VIC"
+      ],
+      "status_granted": "2025-11-14",
+      "status_expires": "2028-11-14",
+      "capex_aud": 8700000000,
+      "construction_jobs": 2280,
+      "ongoing_jobs": 300,
+      "category": "Offshore wind",
+      "location": {
+        "label": "Offshore Gippsland, Victoria",
+        "latitude": -38.7,
+        "longitude": 146.9,
+        "precision": "regional",
+        "basis": "Project description and published source map",
+        "marker_offset": {
+          "x": -12.0,
+          "y": -5.0
+        }
+      }
+    },
+    {
+      "id": 25,
+      "name": "Sunlands Eyre Peninsula Graphite Hub",
+      "proponent": "Quantum Graphite Limited",
+      "description": "The Sunlands Eyre Peninsula Graphite Hub Project proposes to re-establish mining and processing of flake graphite at Uley on South Australia’s Eyre Peninsula.\n\nWhen fully operational the Project is projected to produce up to 200,000 tonnes of concentrate per annum for export for battery anode manufacturing.\n\nThe project has a projected capital expenditure of $0.385 billion and would create about 100 constructions jobs and 180 ongoing jobs.",
+      "state_display": "SA",
+      "state_codes": [
+        "SA"
+      ],
+      "status_granted": "2025-02-18",
+      "status_expires": "2028-02-18",
+      "capex_aud": 385000000,
+      "construction_jobs": 100,
+      "ongoing_jobs": 180,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Uley, Eyre Peninsula, South Australia",
+        "latitude": -34.8,
+        "longitude": 135.73,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 20.0,
+          "y": -8.0
+        }
+      }
+    },
+    {
+      "id": 26,
+      "name": "Sunrise Battery Materials Complex",
+      "proponent": "Sunrise Energy Metals Limited",
+      "description": "The Sunrise Battery Materials Complex, located near Parkes in New South Wales, proposes mining nickel and cobalt along with the rare alloying metal scandium, to produce high-purity sulphates for the rapidly expanding lithium-ion battery market. At full capacity the Project is expected to produce 25,000 of nickel and 7000 tonnes of cobalt per annum as high-purity sulphates for direct supply to battery manufacturers in Asia, Europe and America.\n\nThe Project has a projected capital expenditure of $2.609 billion and would create about 1,900 construction jobs and 380 ongoing jobs.",
+      "state_display": "NSW",
+      "state_codes": [
+        "NSW"
+      ],
+      "status_granted": "2025-02-18",
+      "status_expires": "2028-02-18",
+      "capex_aud": 2609000000,
+      "construction_jobs": 1900,
+      "ongoing_jobs": 380,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Near Parkes, New South Wales",
+        "latitude": -33.13,
+        "longitude": 148.18,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 27,
+      "name": "WAH2 Project",
+      "proponent": "NH3 Clean Energy Ltd",
+      "description": "The WAH2 Clean Ammonia Project is a proposed low emissions ammonia production development located in the Maitland Strategic Industrial Area near Karratha in Western Australia. The project will produce low emissions ammonia for use as a marine fuel, supporting the transition to cleaner shipping and enabling onshore bunkering at the Port of Dampier.\n\nThe project has a projected capital expenditure of approximately A$3.2 billion and is expected to create around 550 construction jobs and approximately 200 ongoing jobs.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2026-04-28",
+      "status_expires": "2029-04-28",
+      "capex_aud": 3200000000,
+      "construction_jobs": 550,
+      "ongoing_jobs": 200,
+      "category": "Renewable energy & hydrogen",
+      "location": {
+        "label": "Maitland Strategic Industrial Area near Karratha, Western Australia",
+        "latitude": -20.73,
+        "longitude": 116.8,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 28,
+      "name": "Western Australia Rare Earth Refinery",
+      "proponent": "Tronox Management Pty Ltd",
+      "description": "The Western Australia Rare Earths Refinery is a proposed industrial facility located in the Rockingham Industrial Zone near Perth, Western Australia. The project will process rare earth monazite concentrate into mixed rare earth carbonate, supporting Australia’s capability in rare earth processing and strengthening its role in global critical minerals supply chains.\n\nThe project has a projected capital expenditure of approximately A$511.3 million and is expected to create around 1,100 construction jobs and approximately 100 ongoing jobs.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2026-04-28",
+      "status_expires": "2029-04-28",
+      "capex_aud": 511300000,
+      "construction_jobs": 1100,
+      "ongoing_jobs": 100,
+      "category": "Advanced manufacturing",
+      "location": {
+        "label": "Rockingham Industrial Zone, Western Australia",
+        "latitude": -32.29,
+        "longitude": 115.76,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 12.0,
+          "y": 7.0
+        }
+      }
+    },
+    {
+      "id": 29,
+      "name": "Western Green Energy Hub",
+      "proponent": "WGEH Pty Ltd",
+      "description": "The Western Green Energy Hub (WGEH) is a proposed large-scale renewable energy project located on the Nullarbor Plain in the far southeast of Western Australia.\n\nAt full scale, the WGEH is projected to produce 70 gigawatts of electricity from wind and solar, with capacity to produce up to 3.5 million tonnes of green hydrogen and derivatives annually.\n\nThe project has a projected capital expenditure of $70 billion and would create about 3000 construction jobs and 500 ongoing jobs.",
+      "state_display": "WA",
+      "state_codes": [
+        "WA"
+      ],
+      "status_granted": "2025-02-18",
+      "status_expires": "2028-02-18",
+      "capex_aud": 70000000000,
+      "construction_jobs": 3000,
+      "ongoing_jobs": 500,
+      "category": "Renewable energy & hydrogen",
+      "location": {
+        "label": "Nullarbor Plain, south-east Western Australia",
+        "latitude": -31.45,
+        "longitude": 126.6,
+        "precision": "regional",
+        "basis": "Project description",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    {
+      "id": 30,
+      "name": "Wingellina Nickel-Cobalt Project",
+      "proponent": "NiCo Resources Limited",
+      "description": "The Wingellina Nickel-Cobalt Project will span Western Australia, South Australia, and the Northern Territory. The Project proposes an integrated mining and processing facility in Western Australia that will produce Mixed Hydroxide Precipitate (MHP) from high-grade nickel-cobalt limonite.\n\nMHP is a key raw material used to produce lithium-ion batteries for electric vehicles and energy storage units. MHP will be transported to port for domestic use and for export to global customers.\n\nOnce operational, the project will produce nickel and cobalt for a minimum of 42 years.\n\nThe project has a projected capital expenditure of $2.9 billion and would create about 1,500 construction jobs and 500 ongoing jobs.",
+      "state_display": "WA, SA, NT",
+      "state_codes": [
+        "WA",
+        "SA",
+        "NT"
+      ],
+      "status_granted": "2024-11-05",
+      "status_expires": "2027-11-05",
+      "capex_aud": 2900000000,
+      "construction_jobs": 1500,
+      "ongoing_jobs": 500,
+      "category": "Critical minerals & resources",
+      "location": {
+        "label": "Wingellina, WA–SA–NT border region",
+        "latitude": -26.05,
+        "longitude": 128.94,
+        "precision": "regional",
+        "basis": "Project description and published source map",
+        "marker_offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    }
+  ]
+}
